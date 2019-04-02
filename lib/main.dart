@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'mywidget.dart';
+import 'clock.dart';
 
 void main() => runApp(MyApp());
 
@@ -93,6 +94,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             MyWidget(),
+            Text("Time is:"),
+            Clock(),
             Text(
               'You have pushed the button this many times:',
             ),
