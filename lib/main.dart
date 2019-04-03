@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'mywidget.dart';
 import 'clock.dart';
+import 'timecounter.dart';
 
 void main() => runApp(MyApp());
 
@@ -103,6 +104,8 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.display1,
             ),
+            Text("My stopwatch:"),
+            TimeCounter(),
           ],
         ),
       ),
